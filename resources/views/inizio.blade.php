@@ -13,7 +13,7 @@
     // --- IMPOSTA LA DATA E ORA DELLA SORPRESA ---
     const targetDate = new Date();
     targetDate.setDate(targetDate.getDate());
-    targetDate.setHours(19, 10, 0, 0);
+    targetDate.setHours(19, 30, 0);
     // -----------------------------------------
 
     const titleElement = document.getElementById('main-title');

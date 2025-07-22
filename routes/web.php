@@ -17,15 +17,10 @@ Route::get('/motivo-1', function () {
 // 3. Seconda pagina con un altro messaggio
 Route::get('/motivo-2', function () {
     $messaggio = "Ogni momento con te diventa un qualcosa di indimenticabile.";
-    $prossima_rotta = '/motivo-3'; 
+    $prossima_rotta = '/motivo-4'; 
     return view('messaggio', compact('messaggio', 'prossima_rotta'));
 });
 
-Route::get('/motivo-3', function () {
-    $messaggio = "Anche nelle giornate più buie basta un tuo sorriso per risollevarmi";
-    $prossima_rotta = '/motivo-4'; // L'ultima pagina con messaggio punta alla dedica finale
-    return view('messaggio', compact('messaggio', 'prossima_rotta'));
-});
 Route::get('/motivo-4', function () {
     $messaggio = "Una delle certezze che ho è che riuscirai sempre a stupirmi.";
     $prossima_rotta = '/motivo-5'; // L'ultima pagina con messaggio punta alla dedica finale
