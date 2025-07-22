@@ -42,7 +42,7 @@ Route::get('/motivo-7', function () {
     return view('messaggio', compact('messaggio', 'prossima_rotta'));
 });
 Route::get('/motivo-8', function () {
-    $messaggio = "mi rendi felice. Non so dire molto altro, è così e basta.";
+    $messaggio = "Mi rendi felice. Non so dire molto altro, è così e basta.";
     $prossima_rotta = '/finale'; // L'ultima pagina con messaggio punta alla dedica finale
     return view('messaggio', compact('messaggio', 'prossima_rotta'));
 });
