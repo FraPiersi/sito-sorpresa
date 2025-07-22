@@ -27,22 +27,27 @@ Route::get('/motivo-3', function () {
     return view('messaggio', compact('messaggio', 'prossima_rotta'));
 });
 Route::get('/motivo-4', function () {
-    $messaggio = "";
+    $messaggio = "Una delle certezze che ho è che riuscirai sempre a stupirmi.";
     $prossima_rotta = '/motivo-5'; // L'ultima pagina con messaggio punta alla dedica finale
     return view('messaggio', compact('messaggio', 'prossima_rotta'));
 });
 Route::get('/motivo-5', function () {
-    $messaggio = "";
+    $messaggio = "Con te mi sento al sicuro, so che posso dirti tutto.";
     $prossima_rotta = '/motivo-6'; // L'ultima pagina con messaggio punta alla dedica finale
     return view('messaggio', compact('messaggio', 'prossima_rotta'));
 });
 Route::get('/motivo-6', function () {
-    $messaggio = "";
+    $messaggio = "Mi spingi sempre a credere in me stesso.";
     $prossima_rotta = '/motivo-7'; // L'ultima pagina con messaggio punta alla dedica finale
     return view('messaggio', compact('messaggio', 'prossima_rotta'));
 });
 Route::get('/motivo-7', function () {
     $messaggio = "Nonostante tutti i miei sbagli e i miei errori sei sempre al mio fianco, provando e riprovando...";
+    $prossima_rotta = '/motivo-8'; // L'ultima pagina con messaggio punta alla dedica finale
+    return view('messaggio', compact('messaggio', 'prossima_rotta'));
+});
+Route::get('/motivo-8', function () {
+    $messaggio = "mi rendi felice. Non so dire molto altro, è così e basta.";
     $prossima_rotta = '/finale'; // L'ultima pagina con messaggio punta alla dedica finale
     return view('messaggio', compact('messaggio', 'prossima_rotta'));
 });
